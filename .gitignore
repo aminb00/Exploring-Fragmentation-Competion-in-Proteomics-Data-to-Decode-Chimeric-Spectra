@@ -63,21 +63,13 @@ build/
 **/analysis/**/*.tsv
 
 # ============================================
-# IGNORA TUTTO FUORI v.2.0.0/code
+# IGNORA TUTTO FUORI v.2.0.0
 # ============================================
 
-# Ignora tutte le cartelle dati (ma mantieni struttura)
-02ng_15m_12mz/**/*
-!02ng_15m_12mz/
-!02ng_15m_12mz/**/.gitkeep
-
-02ng_30m_12mz/**/*
-!02ng_30m_12mz/
-!02ng_30m_12mz/**/.gitkeep
-
-1.6-48mz_30m/**/*
-!1.6-48mz_30m/
-!1.6-48mz_30m/**/.gitkeep
+# Ignora completamente le cartelle dati (non tracciarle su GitHub)
+02ng_15m_12mz/
+02ng_30m_12mz/
+1.6-48mz_30m/
 
 # ============================================
 # v.2.0.0 - Traccia solo codice
