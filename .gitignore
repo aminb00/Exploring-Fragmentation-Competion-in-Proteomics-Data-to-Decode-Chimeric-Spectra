@@ -79,6 +79,7 @@ build/
 v.2.0.0/raw_data/**/*
 !v.2.0.0/raw_data/
 !v.2.0.0/raw_data/**/.gitkeep
+!v.2.0.0/raw_data/msfragger_dda+/.gitkeep
 
 v.2.0.0/processed_data/*.csv
 v.2.0.0/processed_data/*.tsv
