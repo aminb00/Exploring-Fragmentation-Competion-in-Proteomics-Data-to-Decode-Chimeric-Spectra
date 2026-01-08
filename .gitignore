@@ -1,0 +1,113 @@
+# ============================================
+# PXD037527 Repository - .gitignore
+# ============================================
+# Strategia: Traccia solo v.2.0.0/code e README
+#            Ignora tutti i dati (RAW, mzML, CSV grandi)
+#            Mantiene cartelle vuote nel resto della repo
+
+# ============================================
+# File temporanei e sistema
+# ============================================
+.DS_Store
+*.swp
+*.swo
+*~
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# ============================================
+# DATI GRANDI - Ignora tutto
+# ============================================
+
+# File RAW (Thermo)
+*.raw
+*.RAW
+
+# File mzML
+*.mzML
+*.mzml
+
+# CSV grandi (dati processati)
+**/processed_data/*.csv
+**/processed_data/*.tsv
+
+# Features Biosaur
+**/biosaur_features/
+**/processed_data/biosaur_features/
+
+# Output analysis
+**/analysis/**/*.png
+**/analysis/**/*.pdf
+**/analysis/**/*.csv
+**/analysis/**/*.tsv
+
+# ============================================
+# IGNORA TUTTO FUORI v.2.0.0/code
+# ============================================
+
+# Ignora tutte le cartelle dati (ma mantieni struttura)
+02ng_15m_12mz/**/*
+!02ng_15m_12mz/
+!02ng_15m_12mz/**/.gitkeep
+
+02ng_30m_12mz/**/*
+!02ng_30m_12mz/
+!02ng_30m_12mz/**/.gitkeep
+
+1.6-48mz_30m/**/*
+!1.6-48mz_30m/
+!1.6-48mz_30m/**/.gitkeep
+
+# ============================================
+# v.2.0.0 - Traccia solo codice
+# ============================================
+
+# Ignora dati in v.2.0.0
+v.2.0.0/raw_data/**/*
+!v.2.0.0/raw_data/
+!v.2.0.0/raw_data/**/.gitkeep
+
+v.2.0.0/processed_data/*.csv
+v.2.0.0/processed_data/*.tsv
+v.2.0.0/processed_data/biosaur_features/
+
+v.2.0.0/analysis/**/*
+!v.2.0.0/analysis/
+!v.2.0.0/analysis/**/.gitkeep
+
+# Traccia solo codice e README
+!v.2.0.0/code/
+!v.2.0.0/code/**/*.py
+!v.2.0.0/code/**/*.ipynb
+!v.2.0.0/code/**/*.md
+!v.2.0.0/*.md
+!v.2.0.0/.rsyncignore
+
+# ============================================
+# Log e file temporanei
+# ============================================
+*.log
+*.tmp
+*.temp
+

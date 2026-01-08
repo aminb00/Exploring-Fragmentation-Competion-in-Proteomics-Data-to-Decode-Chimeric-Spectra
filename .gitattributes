@@ -1,0 +1,8 @@
+# Git attributes per gestire file grandi
+*.raw filter=lfs diff=lfs merge=lfs -text
+*.mzML filter=lfs diff=lfs merge=lfs -text
+*.mzml filter=lfs diff=lfs merge=lfs -text
+
+# CSV grandi (se vuoi usarli con LFS in futuro)
+# *.csv filter=lfs diff=lfs merge=lfs -text
+
