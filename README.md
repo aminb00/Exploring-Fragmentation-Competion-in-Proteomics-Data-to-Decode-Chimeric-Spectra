@@ -5,10 +5,6 @@
 <h1 align="center">🔬 Exploring Fragmentation Competition in Proteomics Data to Decode Chimeric Spectra</h1>
 
 <p align="center">
-  <strong>A computational framework for deconvolving chimeric MS2 spectra using LASSO regression and deep learning predictions</strong>
-</p>
-
-<p align="center">
   <a href="#-key-findings">Key Findings</a> •
   <a href="#-pipeline-overview">Pipeline</a> •
   <a href="#-methods">Methods</a> •
@@ -158,10 +154,10 @@ This analysis was executed on the **Vlaams Supercomputer Center (VSC)** infrastr
 
 | Stage | Cores | Memory | Runtime | Notes |
 |-------|-------|--------|---------|-------|
-| RAW → mzML conversion | 1 | 8 GB | ~2h/file | ThermoRawFileParser |
-| Prosit API queries | 4 | 16 GB | ~12h total | Rate-limited API calls |
-| Fragment annotation | 32 | 64 GB | ~8h | Parallel processing |
-| LASSO fitting | 64 | 128 GB | ~4h | Grid search parallelized |
+| RAW → mzML conversion | 32 | 64 GB | ~0.6h | ThermoRawFileParser |
+| Prosit API queries | 32 | 16 GB | - | Rate-limited API calls |
+| Fragment annotation | 64 | 64 GB | ~1h | Parallel processing |
+| LASSO fitting | 64 | 64 GB | ~0.5h | Grid search parallelized |
 
 ### SLURM Job Configuration
 
@@ -305,25 +301,11 @@ Where:
 
 ---
 
-## 📖 Citation
-
-```bibtex
-@misc{borqal2026chimeric,
-  author = {Borqal, Mohammed Amin and Adams, Charlotte and Bittremieux, Wout},
-  title = {Exploring Fragmentation Competition in Proteomics Data to Decode Chimeric Spectra},
-  year = {2026},
-  publisher = {GitHub},
-  url = {https://github.com/aminb00/Exploring-Fragmentation-Competion-in-Proteomics-Data-to-Decode-Chimeric-Spectra}
-}
-```
-
----
-
 ## 🙏 Acknowledgements
 
 - **Prof. Wout Bittremieux** — Scientific guidance and mentorship
 - **Dr. Charlotte Adams** — Supervision and continuous support
-- **BittremieuxLab**, University of Antwerp
+- **BittremieuxLab, University of Antwerp**
 - **Vlaams Supercomputer Center (VSC)** — Computational resources
 - **PRIDE/ProteomeXchange** — Public proteomics data (PXD037527)
 
@@ -336,8 +318,3 @@ Exchange Student, MSc Computer Engineering
 University of Bergamo, Italy | University of Antwerp, Belgium  
 📧 [amin.borqal@student.uantwerpen.be](mailto:amin.borqal@student.uantwerpen.be)
 
----
-
-<p align="center">
-  <sub>Made with ❤️ at the University of Antwerp</sub>
-</p>
