@@ -1,0 +1,50 @@
+# ============================================
+# .gitignore per versione vetrina v.3.0.0
+# Include: script, notebook, plots, CSV di output
+# Esclude: dati raw, cache pesante, file intermedi
+# ============================================
+
+# === CACHE E FILE TEMPORANEI ===
+cache/
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# === DATI RAW (troppo grandi) ===
+raw_data/
+*.mzML
+*.raw
+*.RAW
+
+# === FILE BINARI PESANTI ===
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+
+# === CSV GRANDI (>100MB) ===
+processed_data/psm_chimeric.csv
+processed_data/psm_clean.csv
+processed_data/spectrum_to_file.pkl
+processed_data/psm_stats.pkl
+
+# === SLURM JOB FILES ===
+*.out
+*.err
+*.slurm
+
+# === OUTPUT INTERMEDI DA ESCLUDERE ===
+# (mantieni solo i CSV e PNG finali)
+
+# === DATI SENSIBILI ===
+.env
+*.key
+
+# === OS FILES ===
+.DS_Store
+Thumbs.db
+
+# === IDE ===
+.vscode/
+.idea/

@@ -1,0 +1,31 @@
+{
+  "method": "NNLS (CHIMERYS-style channels)",
+  "n_spectra": 29991,
+  "n_psms": 92687,
+  "reconstruction_cosine": 0.7944614941718169,
+  "correlations": {
+    "beta_fragshare": 0.6605420621606471,
+    "beta_prosit_cos": 0.6279886839067312,
+    "beta_hyperscore": 0.2874794688622352,
+    "beta_ms1_log": 0.36578006356462495,
+    "ms1_ratio": 0.3592132687308283
+  },
+  "by_chimericity": {
+    "2": {
+      "cosine": 0.7779764287408534,
+      "n_spectra": 9900
+    },
+    "3": {
+      "cosine": 0.7942055041882431,
+      "n_spectra": 10473
+    },
+    "4": {
+      "cosine": 0.80615591624817,
+      "n_spectra": 6664
+    },
+    "5": {
+      "cosine": 0.8242351915813242,
+      "n_spectra": 2954
+    }
+  }
+}

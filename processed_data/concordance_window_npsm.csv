@@ -1,0 +1,13 @@
+window,n_psm,n_spectra,HS_vs_MS1_top1,HS_vs_MS1_top3,HS_vs_FragShare_top1
+narrow,2,0,,,
+narrow,3,0,,,
+narrow,4,0,,,
+narrow,5,0,,,
+medium,2,0,,,
+medium,3,0,,,
+medium,4,0,,,
+medium,5,0,,,
+wide,2,0,,,
+wide,3,0,,,
+wide,4,0,,,
+wide,5,0,,,
